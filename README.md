@@ -69,7 +69,7 @@ LinkedIn:
 https://www.linkedin.com/in/arthur-cordão-4bb94434b/
 
 GitHub:
-https://github.com/tuzin07on
+https://github.com/tuzin07on/Sprint
 
 ---
 
