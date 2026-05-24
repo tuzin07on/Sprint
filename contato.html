@@ -1,46 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html>
+  <head>
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <header>
+      <h1>Soul Up</h1>
+    </header>
 
-<body>
-<header>
-<h1>Soul Up</h1>
-</header>
+    <section class="contato-area">
+      <div class="contato-info">
+        <h2>Fale com a gente</h2>
 
-<main>
-<section>
-<h2>Entre em contato</h2>
+        <p>Entre em contato para tirar dúvidas.</p>
 
-<form id="formulario">
-<input
-type="text"
-id="nome"
-placeholder="Nome">
+        <p>📧 contato@soulup.com</p>
 
-<input
-type="email"
-id="email"
-placeholder="E-mail">
+        <p>📞 (11)99999-9999</p>
+      </div>
 
-<textarea
-id="mensagem"
-placeholder="Mensagem">
-</textarea>
+      <form id="formulario">
+        <input type="text" placeholder="Nome" id="nome" />
 
-<button type="submit">
-Enviar
-</button>
-</form>
-</section>
-</main>
+        <input type="email" placeholder="Email" id="email" />
 
-<script src="js/contato.js"></script>
+        <textarea placeholder="Mensagem"></textarea>
 
-</body>
+        <button>Enviar mensagem</button>
+      </form>
+    </section>
+
+    <script src="js/contato.js"></script>
+  </body>
 </html>
