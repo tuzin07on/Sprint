@@ -1,3 +1,7 @@
+/* ==================== */
+/* RESET */
+/* ==================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +9,21 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #f5f6fb;
+  color: #222;
+  line-height: 1.6;
 }
+
+/* ==================== */
+/* HEADER */
+/* ==================== */
 
 header {
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 
   padding: 20px 8%;
@@ -27,19 +39,63 @@ header {
 
 .logo h1 {
   color: #8d5bff;
+
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+
+  align-items: center;
 }
 
 .menu {
   display: flex;
+
   list-style: none;
+
   gap: 30px;
+}
+
+.menu li {
+  list-style: none;
 }
 
 .menu a {
   color: white;
 
   text-decoration: none;
+
+  transition: 0.4s;
+
+  font-size: 16px;
 }
+
+.menu a:hover {
+  color: #8d5bff;
+}
+
+/* BOTÃO MENU */
+
+#menu-btn {
+  display: none;
+
+  background: none;
+
+  border: none;
+
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+/* ==================== */
+/* BANNER */
+/* ==================== */
 
 .banner {
   height: 90vh;
@@ -57,10 +113,14 @@ header {
     url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
 
   background-size: cover;
+
+  background-position: center;
 }
 
 .banner h2 {
   font-size: 60px;
+
+  margin-bottom: 20px;
 }
 
 .banner span {
@@ -68,13 +128,20 @@ header {
 }
 
 .banner p {
-  margin: 30px 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
 
   width: 500px;
 }
 
+/* ==================== */
+/* BOTÕES */
+/* ==================== */
+
 .botoes {
   display: flex;
+
   gap: 20px;
 }
 
@@ -85,6 +152,8 @@ header {
   border-radius: 10px;
 
   text-decoration: none;
+
+  transition: 0.5s;
 }
 
 .btn {
@@ -93,13 +162,29 @@ header {
   color: white;
 }
 
+.btn:hover {
+  transform: translateY(-5px);
+}
+
 .btn-secundario {
   border: 1px solid white;
+
   color: white;
 }
 
+.btn-secundario:hover {
+  background: white;
+
+  color: black;
+}
+
+/* ==================== */
+/* CARDS */
+/* ==================== */
+
 .cards {
   display: flex;
+
   justify-content: center;
 
   gap: 30px;
@@ -114,9 +199,9 @@ header {
 
   padding: 30px;
 
-  border-radius: 20px;
+  width: 260px;
 
-  width: 250px;
+  border-radius: 20px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
@@ -127,13 +212,23 @@ header {
   transform: translateY(-10px);
 }
 
+.card h3 {
+  margin-bottom: 15px;
+
+  color: #8d5bff;
+}
+
+/* ==================== */
+/* SOBRE / SOLUÇÃO */
+/* ==================== */
+
 .sobre-home,
 .solucao-home {
   display: flex;
 
-  align-items: center;
-
   justify-content: center;
+
+  align-items: center;
 
   gap: 80px;
 
@@ -145,6 +240,8 @@ header {
   width: 500px;
 
   border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .numeros {
@@ -156,18 +253,14 @@ header {
 }
 
 .numeros h3 {
-  color: #8d5bff;
-
   font-size: 35px;
+
+  color: #8d5bff;
 }
 
-ul {
-  margin-top: 20px;
-}
-
-li {
-  margin-bottom: 15px;
-}
+/* ==================== */
+/* INTEGRANTES */
+/* ==================== */
 
 .integrantes-home {
   padding: 80px;
@@ -177,8 +270,11 @@ li {
 
 .integrantes {
   display: flex;
+
   justify-content: center;
+
   gap: 30px;
+
   margin-top: 40px;
 
   flex-wrap: wrap;
@@ -186,15 +282,22 @@ li {
 
 .integrantes img {
   width: 100px;
+
   height: 100px;
 
   border-radius: 50%;
+
+  margin-bottom: 15px;
 }
+
+/* ==================== */
+/* FAQ */
+/* ==================== */
 
 .faq-home {
   padding: 80px;
 
-  background: #0d0d19;
+  background: #0b0b15;
 
   color: white;
 }
@@ -204,60 +307,38 @@ li {
 
   padding: 20px;
 
-  margin-top: 20px;
-
-  background: #151526;
-
-  color: white;
+  margin-top: 15px;
 
   border: none;
 
+  border-radius: 10px;
+
+  background: #1a1a2b;
+
+  color: white;
+
   cursor: pointer;
 
-  border-radius: 10px;
+  font-size: 16px;
 }
 
 .resposta {
   display: none;
 
+  padding: 20px;
+
   background: white;
 
   color: black;
 
-  padding: 20px;
-
   border-radius: 10px;
+
+  margin-top: 10px;
 }
 
-footer {
-  padding: 30px;
-
-  background: #050510;
-
-  color: white;
-
-  text-align: center;
-}
-
-.banner-pagina {
-  height: 300px;
-
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
-
-  background-size: cover;
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  align-items: center;
-
-  color: white;
-}
+/* ==================== */
+/* CONTATO */
+/* ==================== */
 
 .contato-area {
   display: flex;
@@ -289,4 +370,140 @@ form {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 
   width: 500px;
+}
+
+input,
+textarea {
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8d5bff;
+}
+
+button {
+  background: #8d5bff;
+
+  border: none;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* ==================== */
+/* BANNER PÁGINAS */
+/* ==================== */
+
+.banner-pagina {
+  height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+/* ==================== */
+/* FOOTER */
+/* ==================== */
+
+footer {
+  background: #050510;
+
+  padding: 30px;
+
+  color: white;
+
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+/* ==================== */
+/* FAQ NOVO */
+/* ==================== */
+
+.faq-container {
+  padding: 80px 8%;
+
+  background: #f5f6fb;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.accordion {
+  width: 100%;
+
+  padding: 20px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: #111827;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+
+  text-align: left;
+}
+
+.accordion:hover {
+  background: #8d5bff;
+}
+
+.resposta {
+  display: none;
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 0 0 15px 15px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resposta p {
+  color: #333;
+}
+
+.logo h1 {
+  color: #8d5bff;
 }
